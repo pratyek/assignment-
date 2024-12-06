@@ -23,16 +23,11 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    transition: all 0.3s ease;
-    background-color: rgba(8, 8, 8, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color: rgba(8, 8, 8, 0.98);
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-    padding: 1.5rem 4rem;
+    background-color: rgba(26, 26, 26, 0.95);
 }
 
 .logo {
@@ -45,12 +40,6 @@ body {
     height: 40px;
 }
 
-.logo span {
-    color: #FFFFFF;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
-
 .nav-links {
     display: flex;
     gap: 3rem;
@@ -58,57 +47,36 @@ body {
 }
 
 .nav-links a {
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #FFFFFF;
-}
-
-.nav-links a.book-appointment {
-    background-color: transparent;
+.book-appointment {
+    background-color: #2546F0;
     padding: 0.8rem 1.5rem;
     border-radius: 50px;
-    color: #FFFFFF;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border: 2px solid #2546F0;
-    transition: all 0.3s ease;
-    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: flex;
     align-items: center;
     gap: 0.5rem;
-}
-
-.nav-links a.book-appointment:hover {
-    background-color: #2546F0;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(37, 70, 240, 0.3);
 }
 
 .menu-toggle {
     display: none;
     background: none;
     border: none;
-    color: #B0B0B0;
+    color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.menu-toggle:hover {
-    color: #FFFFFF;
 }
 
 /* Hero Section */
 .hero {
     height: 100vh;
-    min-height: 600px;
-    padding: 120px 4rem 4rem;
     display: flex;
     align-items: center;
     padding: 0 4rem;
@@ -144,77 +112,34 @@ body {
 
 /* About Section */
 .about {
-    background-color: #111111;
-    padding: 6rem 4rem;
+    padding: 8rem 4rem;
+    background-color: #1a1a1a;
 }
 
 .about-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    position: relative;
+    max-width: 800px;
 }
 
-.about-left h2 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 4rem;
-}
-
-.expertise-link {
-    color: #4A90E2;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 12px 24px;
-    background: rgba(74, 144, 226, 0.1);
-    border-radius: 4px;
-    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
-    transition: all 0.3s ease;
-}
-
-.expertise-link:hover {
-    background: rgba(74, 144, 226, 0.2);
-    transform: translateY(-2px);
-}
-
-.about-right {
-    padding-top: 2rem;
-}
-
-.about-right p {
-    margin-bottom: 1.5rem;
+.about-content h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
 }
 
 .highlight {
-    font-style: italic;
-}
-
-.tagline {
     color: #2546F0;
-    font-size: 1.2rem;
+    margin-top: 2rem;
 }
 
 /* Presence Section */
 .presence {
-    background-color: #0D0D0D;
-    padding: 6rem 4rem;
-}
-
-.presence h2 {
-    max-width: 1200px;
-    margin: 0 auto 3rem;
+    padding: 4rem;
+    background-color: #1a1a1a;
 }
 
 .presence-grid {
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 4rem;
     align-items: center;
 }
 
@@ -224,22 +149,7 @@ body {
 }
 
 .cities-list li {
-    margin-bottom: 0.8rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.cities-list li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 8px;
-    height: 8px;
-    background: #4A90E2;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(74, 144, 226, 0.5);
+    margin-bottom: 0.5rem;
 }
 
 .india-map {
@@ -254,15 +164,14 @@ body {
 
 /* Latest Work Section */
 .latest-work {
-    padding: 6rem 4rem;
+    padding: 4rem;
 }
 
 .section-header {
-    max-width: 1200px;
-    margin: 0 auto 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
 .view-all {
@@ -271,8 +180,6 @@ body {
 }
 
 .work-grid {
-    max-width: 1200px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -286,7 +193,7 @@ body {
 
 .work-item img {
     width: 100%;
-    height: 500px;
+    height: 400px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
@@ -304,61 +211,38 @@ body {
 
 /* Insights Section */
 .insights {
-    background-color: #141414;
-    padding: 6rem 4rem;
-}
-
-.insights h2 {
-    max-width: 1200px;
-    margin: 0 auto 3rem;
+    padding: 4rem;
 }
 
 .insights-slider {
-    max-width: 1200px;
-    margin: 0 auto;
     position: relative;
     padding: 2rem 0;
 }
 
 .insights-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.insights-container::-webkit-scrollbar {
+    display: none;
 }
 
 .insight-card {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 2.5rem;
-    position: relative;
-    transition: transform 0.3s ease;
+    min-width: 300px;
+    padding: 2rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.insight-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.05);
-}
-
-.linkedin-icon {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 30px;
-    height: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 15px;
 }
 
 /* Contact Section */
 .contact {
-    background-color: #0A0A0A;
-    padding: 6rem 4rem;
+    padding: 4rem;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -386,19 +270,12 @@ body {
 }
 
 .email-input {
-    width: 280px;
-    padding: 1rem 1.5rem;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    flex: 1;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 25px;
     color: white;
-    transition: all 0.3s ease;
-}
-
-.email-input:focus {
-    border-color: #4A90E2;
-    background: rgba(255, 255, 255, 0.08);
-    outline: none;
 }
 
 .sign-up-btn {
@@ -446,7 +323,7 @@ footer {
     }
 
     .hero {
-        padding: 100px 2rem 2rem;
+        padding: 0 2rem;
         text-align: center;
     }
 
@@ -455,7 +332,7 @@ footer {
     }
 
     .about, .presence, .latest-work, .insights, .contact {
-        padding: 0 1rem;
+        padding: 2rem;
     }
 
     .presence-grid {
@@ -478,14 +355,6 @@ footer {
 
     .social-icons {
         justify-content: center;
-    }
-
-    .work-item img {
-        height: 300px;
-    }
-
-    .stats-container {
-        padding: 1.5rem;
     }
 }
 
@@ -618,153 +487,3 @@ h2::after {
     font-size: 0.9rem;
     opacity: 0.8;
 }
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .about-content,
-    .contact-content {
-        grid-template-columns: 1fr;
-    }
-    
-    .insights-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .stats-box {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Additional Aesthetic Improvements */
-.section-title {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 3rem;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 60px;
-    height: 3px;
-    background: #4A90E2;
-    border-radius: 2px;
-}
-
-/* Gradient Borders */
-.insight-card, .stats-box, .email-input {
-    position: relative;
-    overflow: hidden;
-}
-
-.insight-card::before, .stats-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-}
-
-/* Footer Logo */
-.footer-logo {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 1rem;
-    filter: brightness(0.9);
-    transition: filter 0.3s ease;
-}
-
-.footer-logo:hover {
-    filter: brightness(1);
-}
-
-.slider-btn {
-    display: none;
-}
-
-/* Hero Section Book Appointment Button */
-.hero-content .book-appointment {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.8rem;
-    background-color: #2546F0;
-    color: #FFFFFF;
-    padding: 1rem 2rem;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    margin-top: 2rem;
-    border: none;
-    transition: all 0.3s ease;
-}
-
-.hero-content .book-appointment:hover {
-    background-color: #1a35d0;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(37, 70, 240, 0.3);
-}
-
-/* Arrow icon for the buttons */
-.book-appointment .arrow {
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-}
-
-.book-appointment:hover .arrow {
-    transform: translateX(4px);
-}
-
-/* Stats Box */
-.stats-box {
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 15px;
-    padding: 2rem 3rem;
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    width: 100%;
-}
-
-.stat {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0 1rem;
-    position: relative;
-}
-
-.stat:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    right: -1rem;
-    top: 50%;
-    transform: translateY(-50%);
-    height: 40px;
-    width: 1px;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.stat h3 {
-    font-size: 2.5rem;
-    color: #FFFFFF;
-    margin: 0;
-    min-width: max-content;
-}
-
-.stat p {
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0;
-    line-height: 1.4;
-}
-
-/* Update HTML structure */

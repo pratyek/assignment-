@@ -329,7 +329,7 @@ body {
 }
 
 .insight-card {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
     padding: 2.5rem;
     position: relative;
